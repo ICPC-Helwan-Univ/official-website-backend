@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'votes',
     'tags',
     'categories',
-    'training_level',
+    'levels',
 ]
 
 MIDDLEWARE = [
