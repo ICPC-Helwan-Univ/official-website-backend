@@ -1,11 +1,11 @@
 from rest_framework import serializers
 
 
-from levels.models import TrainingLevel
+from levels.models import Level
 
 
-class TrainingLevelSerializer(serializers.HyperlinkedModelSerializer):
+class LevelSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = TrainingLevel
+        model = Level
         fields = '__all__'
 

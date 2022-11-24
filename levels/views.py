@@ -1,11 +1,11 @@
 from rest_framework import viewsets
-from levels.models import TrainingLevel
-from levels.serializers import TrainingLevelSerializer
+from levels.models import Level
+from levels.serializers import LevelSerializer
 
 
-class TrainingLevelViewSet(viewsets.ModelViewSet):
-    queryset = TrainingLevel.objects.all()
-    serializer_class = TrainingLevelSerializer
+class LevelViewSet(viewsets.ModelViewSet):
+    queryset = Level.objects.all()
+    serializer_class = LevelSerializer
 
 
 

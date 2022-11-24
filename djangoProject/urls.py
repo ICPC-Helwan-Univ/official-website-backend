@@ -24,7 +24,7 @@ from categories.views import CategoryViewSet
 from comments.views import CommentViewSet
 from djangoProject import settings
 from tags.views import TagViewSet
-from levels.views import TrainingLevelViewSet
+from levels.views import LevelViewSet
 from users.views import RegisterView
 from votes.views import VoteViewSet
 
@@ -34,7 +34,7 @@ router.register('tags', TagViewSet)
 router.register('comments', CommentViewSet)
 router.register('votes', VoteViewSet)
 router.register('categories', CategoryViewSet)
-router.register('levels', TrainingLevelViewSet)
+router.register('levels', LevelViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
