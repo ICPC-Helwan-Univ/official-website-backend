@@ -10,7 +10,7 @@ Class-based views
     1. Add an import:  from other_app.views import Home
     2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
 Including another URLconf
-    1. Import the include() function: from django.urls import include, path
+    1. Import to include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.conf.urls.static import static
@@ -24,6 +24,7 @@ from categories.views import CategoryViewSet
 from comments.views import CommentViewSet
 from djangoProject import settings
 from tags.views import TagViewSet
+from training_level.views import TrainingLevelViewSet
 from users.views import RegisterView
 from votes.views import VoteViewSet
 
@@ -33,6 +34,7 @@ router.register('tags', TagViewSet)
 router.register('comments', CommentViewSet)
 router.register('votes', VoteViewSet)
 router.register('categories', CategoryViewSet)
+router.register('training-level', TrainingLevelViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
