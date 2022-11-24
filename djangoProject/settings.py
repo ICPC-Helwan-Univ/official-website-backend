@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'tags',
     'categories',
     'levels',
+    'contests'
 ]
 
 MIDDLEWARE = [
