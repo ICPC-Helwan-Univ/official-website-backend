@@ -22,6 +22,7 @@ from rest_framework_simplejwt import views as jwt_views
 from blog.views import PostViewSet
 from categories.views import CategoryViewSet
 from comments.views import CommentViewSet
+from contests.views import ContestViewSet
 from djangoProject import settings
 from tags.views import TagViewSet
 from levels.views import LevelViewSet
@@ -35,6 +36,7 @@ router.register('comments', CommentViewSet)
 router.register('votes', VoteViewSet)
 router.register('categories', CategoryViewSet)
 router.register('levels', LevelViewSet)
+router.register('contests', ContestViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
